@@ -6,69 +6,59 @@
   <title>Our Little Kitchen</title>
   <style>
     body {
-      background: #ffe2ed;
+      background: #ffcfe0;
       font-family: 'Poppins', Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
-
     header {
       text-align: center;
       padding: 25px 0;
       background: #f4bedc;
     }
-
     header img {
-      width: 180px;
+      width: 200px;
       border-radius: 20px;
     }
-
     h1 {
       color: #ad1c38;
       font-size: 3em;
       margin-bottom: 0;
     }
-
     .hero {
       text-align: center;
       margin: 30px 0 20px 0;
     }
-
     .hero img {
       width: 400px;
       max-width: 95vw;
       border-radius: 20px;
       margin-bottom: 15px;
     }
-
     .hero h2 {
       color: #ad1c38;
       font-weight: 600;
     }
-
     .menu-section {
-      max-width: 950px;
-      margin: 0 auto 50px auto;
-      background: #fff8fb;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      background: #fdf6fb;
       border-radius: 18px;
       box-shadow: 0 4px 20px #e7b1c7;
-      padding: 32px 18px;
+      padding: 28px 14px;
     }
-
     .menu-section h2 {
       color: #ad1c38;
       text-align: center;
-      font-size: 2.2em;
+      font-size: 2em;
       margin-bottom: 24px;
     }
-
     .menu-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
     }
-
     .menu-item {
       background: #fff;
       border-radius: 14px;
@@ -78,70 +68,47 @@
       padding: 14px 0 10px 0;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
     .menu-item:hover {
       transform: translateY(-5px);
       box-shadow: 0 4px 12px #e7b1c7;
     }
-
     .menu-item img {
       width: 140px;
       border-radius: 14px;
       margin-bottom: 10px;
     }
-
     .menu-item h3 {
       font-size: 1.1em;
       color: #ad1c38;
       margin: 7px 0 0 0;
     }
-
     .menu-item p {
       font-size: 0.95em;
       color: #444;
       margin: 4px 0 8px 0;
     }
-
     .about, .contact {
       max-width: 650px;
       background: #fff0f6;
       margin: 0 auto 30px auto;
-      padding: 25px;
+      padding: 22px;
       border-radius: 16px;
       box-shadow: 0 2px 8px #e7b1c7;
     }
-
     .about h2, .contact h2 {
       color: #ad1c38;
-      font-size: 1.8em;
+      font-size: 1.7em;
       text-align: center;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
-
-    .order-buttons a {
-      display: inline-block;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 10px;
-      margin: 6px;
+    a {
+      color: #ad1c38;
       text-decoration: none;
       font-weight: 600;
-      transition: transform 0.2s ease;
     }
-
-    .order-buttons a:hover {
-      transform: scale(1.05);
+    a:hover {
+      text-decoration: underline;
     }
-
-    /* Swiggy and Zomato buttons - original brand colors */
-    .swiggy-btn {
-      background: #fc8019; /* orange */
-    }
-
-    .zomato-btn {
-      background: #cb202d; /* red */
-    }
-
     .footer {
       text-align: center;
       color: #ad1c38;
@@ -149,7 +116,6 @@
       background: #f4bedc;
       font-weight: 600;
     }
-
     @media (max-width: 610px) {
       .menu-grid { flex-direction: column; align-items: center; }
       .menu-item { width: 90vw; }
@@ -159,8 +125,7 @@
 </head>
 <body>
   <header>
-    <!-- Your official logo -->
-    <img src="logo.jpg" alt="Our Little Kitchen Logo">
+    <img src="IMAGE2.jpg" alt="Our Little Kitchen Logo">
     <h1>Our Little Kitchen</h1>
   </header>
 
@@ -207,15 +172,17 @@
         <h3>Pizza</h3>
         <p>Stone-baked pizza with fresh toppings.</p>
       </div>
+      <!-- 🥙 New Item: Wraps -->
       <div class="menu-item">
         <img src="wraps.jpg" alt="Wraps">
         <h3>Wraps</h3>
-        <p>Soft tortillas filled with your favorite stuffing.</p>
+        <p>Soft tortilla wraps filled with veggies and sauces.</p>
       </div>
+      <!-- 🍚 New Item: Schezwan Fried Rice -->
       <div class="menu-item">
         <img src="schezwan_fried_rice.jpg" alt="Schezwan Fried Rice">
         <h3>Schezwan Fried Rice</h3>
-        <p>Spicy, tangy rice with bold Asian flavors.</p>
+        <p>Spicy Indo-Chinese fried rice bursting with flavor.</p>
       </div>
     </div>
   </section>
@@ -226,14 +193,10 @@
   </section>
 
   <section class="contact">
-    <h2>Order Online</h2>
-    <p style="text-align: center;">Now you can order your favorite dishes from <strong>Our Little Kitchen</strong> on:</p>
-    <div class="order-buttons" style="text-align: center; margin-top: 15px;">
-      <a href="https://www.swiggy.com" target="_blank" class="swiggy-btn">Order on Swiggy</a>
-      <a href="https://www.zomato.com" target="_blank" class="zomato-btn">Order on Zomato</a>
-    </div>
-    <p style="text-align: center; margin-top: 20px;">Follow us on Instagram for offers and updates!</p>
-    <p style="text-align: center;">Email: info@ourlittlekitchen.com</p>
+    <h2>Contact Us</h2>
+    <p>Order on WhatsApp: <a href="https://wa.me/your-number">Click Here</a></p>
+    <p>Follow us on Instagram for offers and updates!</p>
+    <p>Email: info@ourlittlekitchen.com</p>
   </section>
 
   <div class="footer">
