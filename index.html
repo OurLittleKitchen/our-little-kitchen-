@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Little Kitchen</title>
   <style>
     body {
@@ -10,45 +10,73 @@
       font-family: 'Poppins', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #333;
     }
 
     header {
       text-align: center;
       padding: 25px 0;
       background: #f4bedc;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     header img {
-      width: 180px;
+      width: 160px;
       border-radius: 20px;
+      margin-bottom: 8px;
     }
 
     h1 {
       color: #ad1c38;
       font-size: 3em;
-      margin-bottom: 0;
+      margin: 0;
     }
 
     .hero {
       text-align: center;
-      margin: 30px 0 20px 0;
+      margin: 40px 0 20px 0;
     }
 
     .hero img {
-      width: 400px;
-      max-width: 95vw;
+      width: 420px;
+      max-width: 90vw;
       border-radius: 20px;
-      margin-bottom: 15px;
+      box-shadow: 0 4px 20px #e7b1c7;
+      margin-bottom: 18px;
     }
 
     .hero h2 {
       color: #ad1c38;
       font-weight: 600;
+      font-size: 1.5em;
+    }
+
+    /* --- Menu Image Showcase --- */
+    .menu-showcase {
+      text-align: center;
+      margin: 40px auto;
+      max-width: 800px;
+      background: #fff8fb;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px #e7b1c7;
+      padding: 25px;
+    }
+
+    .menu-showcase img {
+      width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px #e7b1c7;
+    }
+
+    .menu-showcase h2 {
+      color: #ad1c38;
+      font-size: 2em;
+      margin-bottom: 15px;
     }
 
     .menu-section {
       max-width: 950px;
-      margin: 0 auto 50px auto;
+      margin: 0 auto 60px auto;
       background: #fff8fb;
       border-radius: 18px;
       box-shadow: 0 4px 20px #e7b1c7;
@@ -105,7 +133,7 @@
     .about, .contact {
       max-width: 650px;
       background: #fff0f6;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 40px auto;
       padding: 25px;
       border-radius: 16px;
       box-shadow: 0 2px 8px #e7b1c7;
@@ -133,13 +161,12 @@
       transform: scale(1.05);
     }
 
-    /* Swiggy and Zomato buttons - original brand colors */
     .swiggy-btn {
-      background: #fc8019; /* orange */
+      background: #fc8019;
     }
 
     .zomato-btn {
-      background: #cb202d; /* red */
+      background: #cb202d;
     }
 
     .footer {
@@ -148,96 +175,102 @@
       padding: 20px;
       background: #f4bedc;
       font-weight: 600;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
     }
 
     @media (max-width: 610px) {
       .menu-grid { flex-direction: column; align-items: center; }
       .menu-item { width: 90vw; }
-      .hero img { width: 90vw; }
+      .hero img, .menu-showcase img { width: 95vw; }
     }
   </style>
 </head>
 <body>
   <header>
-    <!-- Your official logo -->
-    <img src="logo.jpg" alt="Our Little Kitchen Logo">
+    <img src="logo.jpg" alt="Our Little Kitchen Logo" />
     <h1>Our Little Kitchen</h1>
   </header>
 
   <div class="hero">
-    <img src="IMAGE1.jpg" alt="Menu Highlights">
+    <img src="IMAGE1.jpg" alt="Menu Highlights" />
     <h2>Delicious Cloud Kitchen Meals, Made with Love!</h2>
   </div>
 
+  <!-- Your new Menu Image -->
+  <section class="menu-showcase">
+    <h2>Our Latest Menu</h2>
+    <img src="menu_card.jpg" alt="Our Little Kitchen Menu Card" />
+  </section>
+
   <section class="menu-section">
-    <h2>Our Menu</h2>
+    <h2>Popular Dishes</h2>
     <div class="menu-grid">
       <div class="menu-item">
-        <img src="brownies.jpg" alt="Brownies">
-        <h3>Brownies</h3>
-        <p>Rich chocolate brownies, perfectly baked.</p>
+        <img src="brownies.jpg" alt="Brownies" />
+        <h3>Chocolate Brownies</h3>
+        <p>Rich chocolate brownies, soft and delicious.</p>
       </div>
       <div class="menu-item">
-        <img src="maggi.jpg" alt="Maggi">
-        <h3>Maggi</h3>
-        <p>Spicy instant noodles for the comfort food lover.</p>
+        <img src="maggi.jpg" alt="Maggi" />
+        <h3>Maggi (Customised)</h3>
+        <p>Spicy noodles cooked just the way you like.</p>
       </div>
       <div class="menu-item">
-        <img src="white_sauce_pasta.jpg" alt="White Sauce Pasta">
+        <img src="white_sauce_pasta.jpg" alt="White Sauce Pasta" />
         <h3>White Sauce Pasta</h3>
-        <p>Creamy pasta cooked in white sauce.</p>
+        <p>Creamy and comforting pasta for every mood.</p>
       </div>
       <div class="menu-item">
-        <img src="gajar_halwa.jpg" alt="Gajar Halwa">
-        <h3>Gajar Halwa</h3>
-        <p>Fresh carrot dessert with nuts and ghee.</p>
+        <img src="gajar_halwa.jpg" alt="Gajar Ka Halwa" />
+        <h3>Gajar Ka Halwa</h3>
+        <p>Fresh carrot dessert with ghee and dry fruits.</p>
       </div>
       <div class="menu-item">
-        <img src="nacho_cheese.jpg" alt="Nacho Cheese">
-        <h3>Nacho Cheese</h3>
-        <p>Crispy nachos with cheesy topping.</p>
+        <img src="nacho_cheese.jpg" alt="Nachos with Cheese" />
+        <h3>Nachos with Cheese</h3>
+        <p>Crispy nachos topped with melted cheese.</p>
       </div>
       <div class="menu-item">
-        <img src="burger.jpg" alt="Burger">
-        <h3>Burger</h3>
-        <p>Juicy burger with lettuce, tomato, and cheese.</p>
+        <img src="burger.jpg" alt="Cheeseburger" />
+        <h3>Cheeseburger (Customised)</h3>
+        <p>Juicy, cheesy burger made to your taste.</p>
       </div>
       <div class="menu-item">
-        <img src="pizza.jpg" alt="Pizza">
-        <h3>Pizza</h3>
-        <p>Stone-baked pizza with fresh toppings.</p>
+        <img src="pizza.jpg" alt="Pepperoni Pizza" />
+        <h3>Pepperoni Pizza</h3>
+        <p>Hot, cheesy pizza with delicious pepperoni.</p>
       </div>
       <div class="menu-item">
-        <img src="wraps.jpg" alt="Wraps">
-        <h3>Wraps</h3>
-        <p>Soft tortillas filled with your favorite stuffing.</p>
+        <img src="wraps.jpg" alt="Chicken Wrap" />
+        <h3>Chicken Wrap</h3>
+        <p>Soft tortilla wrap with tender chicken filling.</p>
       </div>
       <div class="menu-item">
-        <img src="schezwan_fried_rice.jpg" alt="Schezwan Fried Rice">
+        <img src="schezwan_fried_rice.jpg" alt="Schezwan Fried Rice" />
         <h3>Schezwan Fried Rice</h3>
-        <p>Spicy, tangy rice with bold Asian flavors.</p>
+        <p>Spicy fried rice bursting with flavor.</p>
       </div>
     </div>
   </section>
 
   <section class="about">
     <h2>About Us</h2>
-    <p>Welcome to <strong>Our Little Kitchen</strong> — your cloud kitchen destination for homemade flavors and yummy treats! Every dish is prepared with love and care, bringing comfort food and unique desserts right to your doorstep. Experience our menu crafted for every mood, every moment!</p>
+    <p>Welcome to <strong>Our Little Kitchen</strong> — your go-to cloud kitchen for homely flavors and creative dishes! Every recipe is prepared with care, blending traditional taste with modern style. Whether it’s a comforting meal or a sweet treat, we bring happiness to your doorstep.</p>
   </section>
 
   <section class="contact">
     <h2>Order Online</h2>
-    <p style="text-align: center;">Now you can order your favorite dishes from <strong>Our Little Kitchen</strong> on:</p>
+    <p style="text-align: center;">Order your favorites from <strong>Our Little Kitchen</strong> via:</p>
     <div class="order-buttons" style="text-align: center; margin-top: 15px;">
       <a href="https://www.swiggy.com" target="_blank" class="swiggy-btn">Order on Swiggy</a>
       <a href="https://www.zomato.com" target="_blank" class="zomato-btn">Order on Zomato</a>
     </div>
-    <p style="text-align: center; margin-top: 20px;">Follow us on Instagram for offers and updates!</p>
+    <p style="text-align: center; margin-top: 20px;">Follow us on Instagram for offers & updates!</p>
     <p style="text-align: center;">Email: info@ourlittlekitchen.com</p>
   </section>
 
   <div class="footer">
-    &copy; 2025 Our Little Kitchen. Made with love!
+    &copy; 2025 Our Little Kitchen. Made with ❤️
   </div>
 </body>
 </html>
