@@ -11,12 +11,13 @@
       margin: 0;
       padding: 0;
       color: #333;
+      scroll-behavior: smooth;
     }
 
     header {
       text-align: center;
       padding: 25px 0;
-      background: #f4bedc;
+      background: linear-gradient(135deg, #f4bedc, #ffccde);
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
@@ -28,7 +29,7 @@
 
     h1 {
       color: #ad1c38;
-      font-size: 3em;
+      font-size: 2.8em;
       margin: 0;
     }
 
@@ -51,7 +52,6 @@
       font-size: 1.5em;
     }
 
-    /* --- Menu Image Showcase --- */
     .menu-showcase {
       text-align: center;
       margin: 40px auto;
@@ -146,42 +146,45 @@
       margin-bottom: 12px;
     }
 
-    .order-buttons a {
+    .insta-btn {
       display: inline-block;
+      background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
       color: white;
-      padding: 10px 18px;
-      border-radius: 10px;
-      margin: 6px;
-      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 12px;
       font-weight: 600;
-      transition: transform 0.2s ease;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     }
 
-    .order-buttons a:hover {
-      transform: scale(1.05);
+    .insta-btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     }
 
-    .swiggy-btn {
-      background: #fc8019;
-    }
-
-    .zomato-btn {
-      background: #cb202d;
+    .follow-text {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ad1c38;
     }
 
     .footer {
       text-align: center;
       color: #ad1c38;
-      padding: 20px;
-      background: #f4bedc;
+      padding: 22px;
+      background: linear-gradient(135deg, #f4bedc, #ffd7ea);
       font-weight: 600;
       box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+      letter-spacing: 0.5px;
     }
 
     @media (max-width: 610px) {
       .menu-grid { flex-direction: column; align-items: center; }
       .menu-item { width: 90vw; }
       .hero img, .menu-showcase img { width: 95vw; }
+      .insta-btn { width: 80%; }
     }
   </style>
 </head>
@@ -196,7 +199,6 @@
     <h2>Delicious Cloud Kitchen Meals, Made with Love!</h2>
   </div>
 
-  <!-- Your new Menu Image -->
   <section class="menu-showcase">
     <h2>Our Latest Menu</h2>
     <img src="menu_card.jpg" alt="Our Little Kitchen Menu Card" />
@@ -260,17 +262,20 @@
 
   <section class="contact">
     <h2>Order Online</h2>
-    <p style="text-align: center;">Order your favorites from <strong>Our Little Kitchen</strong> via:</p>
-    <div class="order-buttons" style="text-align: center; margin-top: 15px;">
-      <a href="https://www.swiggy.com" target="_blank" class="swiggy-btn">Order on Swiggy</a>
-      <a href="https://www.zomato.com" target="_blank" class="zomato-btn">Order on Zomato</a>
+    <p style="text-align: center;">Want to place an order? 💬</p>
+    <p style="text-align: center; margin-top: 10px;">DM us directly on Instagram to order your favorite dishes!</p>
+    <div style="text-align: center; margin-top: 15px;">
+      <a href="instagram://user?username=ourlittlekitchenn" 
+         onclick="if(!window.open('instagram://user?username=ourlittlekitchenn')) window.location='https://www.instagram.com/ourlittlekitchenn?igsh=MXViMzlidm1reWY3Mg=='" 
+         target="_blank" 
+         class="insta-btn">DM Us on Instagram</a>
     </div>
-    <p style="text-align: center; margin-top: 20px;">Follow us on Instagram for offers & updates!</p>
-    <p style="text-align: center;">Email: info@ourlittlekitchen.com</p>
+    <p class="follow-text">@ourlittlekitchenn</p>
+    <p style="text-align: center; margin-top: 20px;">Email: info@ourlittlekitchen.com</p>
   </section>
 
   <div class="footer">
-    &copy; 2025 Our Little Kitchen. Made with ❤️
+    &copy; 2025 Our Little Kitchen. Made with ❤️ and a pinch of magic ✨
   </div>
 </body>
 </html>
